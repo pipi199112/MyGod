@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.supportv13">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-sdk android:minSdkVersion="13" />
+
+
+    <application android:label="@string/activity_sample_code"
+            android:icon="@drawable/app_sample_code"
+            android:hardwareAccelerated="true">
+          <activity
+            android:name="com.example.android.supportv13.app.StartFlashActivity"
+            android:label="启动动画"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>
